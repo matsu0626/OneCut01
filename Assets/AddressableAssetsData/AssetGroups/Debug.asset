@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Debug
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Debug
+  m_GUID: d74c5c2932b2a3c4e9faadda165cca4b
+  m_SerializeEntries:
+  - m_GUID: 04b5248dfc8997b4cb31cd7117d39384
+    m_Address: DebugMenuDialog
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c02ce451a68e134ba1080ebe94243a3
+    m_Address: DebugUIScrollViewH
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 30102654470e0774c950d9983eab6c1b
+    m_Address: DebugUIScrollViewV
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 38170dce2fd205941b0692e919fa768c
+    m_Address: DebugModalDialog
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 402af19029166174ead1a49ad3d31ece
+    m_Address: Debug3DCharacterMoveUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72173ee147b2446409e61a64d9fb29d2
+    m_Address: DebugTextureAtlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ad4b3a5442dde2458bed465c26632b3
+    m_Address: Debug3DModelUI
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f5aab4ca79cd544193cca8fbcbc41f6
+    m_Address: DebugUIModalStack
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a57b475e0bf6e5d40af03334bb8e8a14
+    m_Address: Debug3DModelWorld
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1d3ac38d3b87384bb31629d3d274d47
+    m_Address: Debug3DCharacterMoveWorld
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da4b7cbedc3106e4b8021cdeba16b3e1
+    m_Address: DebugUIButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee1a9d1951b632146a31c986b1898dec
+    m_Address: DebugUIDialog
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d41f471c03f0c4043a83da9a43ace415, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 405571fa1cb7b7444800eba9dfcd8752, type: 2}
+    - {fileID: 11400000, guid: 1fbb70b41ddba5f4abec0eb13091bcca, type: 2}

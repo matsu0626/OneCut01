@@ -1,0 +1,35 @@
+{
+  "$id": "15",
+  "AutoRefresh": true,
+  "AutoRefreshRemotes": true,
+  "CommitTextLinks": null,
+  "DraftCommitMsg": "",
+  "IncomingSavedCount": 0,
+  "LastCheckedRemotes": "2026-01-20T19:28:40.3634948+09:00",
+  "LastUsedView": 1,
+  "LogBranchFilterIndex": 0,
+  "OutgoingSavedCount": 0,
+  "SidebarExpandedItems": [
+    "ブランチ",
+    "リモート",
+    "スタッシュ"
+  ],
+  "SidebarWidth": 210.0,
+  "SubtreeLinks": [],
+  "NeedsLargeFilesPull": true,
+  "RemoteProjectLinks": [
+    {
+      "$id": "16",
+      "BaseUrl": "https://github.com",
+      "Identifier": "CGK-develop/MTest01",
+      "RemoteName": "origin",
+      "Type": 0,
+      "Username": "cgk-matsuhashi",
+      "CloneUrl": null,
+      "ProjectUrl": null,
+      "AccountId": "cgk-matsuhashi@github.com",
+      "AvatarUrl": null,
+      "DisplayName": "origin: https://github.com"
+    }
+  ]
+}

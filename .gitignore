@@ -1,0 +1,52 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Addressables build output
+Assets/StreamingAssets/aa/
+ServerData/
+Library/com.unity.addressables/
+Assets/AddressableAssetsData/link.xml
+Assets/AddressableAssetsData/link.xml.meta
+
+
+
+# IDE / Editor
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.DotSettings.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Platform builds / caches
+*.apk
+*.aab
+*.ipa
+*.app
+*.xcuserstate
+DerivedData/
+.gradle/
+.vsconfig

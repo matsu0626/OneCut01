@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Model
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Model
+  m_GUID: 9c392589f65dde844be96c2c413fbdb5
+  m_SerializeEntries:
+  - m_GUID: 60770bdb4dc667c45bea53db0339dc05
+    m_Address: Character01
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ModelView
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b107b2ea415fdb740b3bb67d81af652a
+    m_Address: StreetLamp01
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ModelView
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d41f471c03f0c4043a83da9a43ace415, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fbb2292be1b7aea4a878b20db0c6eea6, type: 2}
+    - {fileID: 11400000, guid: 5e0fd6b922686c14cb49ba217da4e97b, type: 2}

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: CommonSound
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: CommonSound
+  m_GUID: fab059ad095d1724382c3b5b8f3315f7
+  m_SerializeEntries:
+  - m_GUID: 18e2ef208df4c1f4e8991ea9cb167bce
+    m_Address: se_01
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Common
+    - CommonSound
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6874ba69c53fb343be3df6c266c4741
+    m_Address: se_02
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Common
+    - CommonSound
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d41f471c03f0c4043a83da9a43ace415, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a9ab80dcc17d61b4dbe7e1cc9a212e8f, type: 2}
+    - {fileID: 11400000, guid: 71d5096348673cf41b6cd7768c573846, type: 2}

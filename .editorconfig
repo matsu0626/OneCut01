@@ -1,0 +1,8 @@
+﻿# VisualStudio Config
+root = true
+
+# すべてのテキストファイル
+[*]
+charset = utf-8-bom
+end_of_line = crlf
+insert_final_newline = true
