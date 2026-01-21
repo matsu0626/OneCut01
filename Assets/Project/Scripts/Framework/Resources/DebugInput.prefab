@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6985445218570911212}
   - component: {fileID: 5635862841063440887}
-  - component: {fileID: 7615552507017144473}
   - component: {fileID: 2586223004688652088}
   m_Layer: 0
   m_Name: DebugInput
@@ -46,19 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eed7ac8d37530048a098dc28ad29ee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7615552507017144473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7559717612198769740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a173fb3af83fee348bc70b843c88a78e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setting: {fileID: 11400000, guid: 04b17abb327b3d34eb5308d65cc00c3f, type: 2}
 --- !u!114 &2586223004688652088
 MonoBehaviour:
   m_ObjectHideFlags: 0
