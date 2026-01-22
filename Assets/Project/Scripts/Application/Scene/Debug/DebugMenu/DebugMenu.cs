@@ -38,6 +38,7 @@ public class DebugMenu : MonoBehaviour
         new MenuItem { _itemName = "UIScrollView",      _hideBG = false },
         new MenuItem { _itemName = "3DModel",           _hideBG = true  },
         new MenuItem { _itemName = "3DCharacterMove",   _hideBG = true  },
+        new MenuItem { _itemName = "3DLight",           _hideBG = true  },
     };
 
     private enum State

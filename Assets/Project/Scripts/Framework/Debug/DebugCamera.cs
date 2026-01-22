@@ -337,8 +337,10 @@ public sealed class DebugCamera : SingletonMonoBehaviour<DebugCamera>
 
         m_yaw = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg;
         float horizLen = new Vector2(dir.x, dir.z).magnitude;
-        m_pitch = Mathf.Atan2(dir.y, horizLen) * Mathf.Rad2Deg;
+        // dir: target -> camera。UnityのEuler(pitch,yaw,0) は「上向きピッチが正」なので dir から求めた値は符号反転する
+        m_pitch = -Mathf.Atan2(dir.y, horizLen) * Mathf.Rad2Deg;
         m_pitch = Mathf.Clamp(m_pitch, -80f, 80f);
+        
 
         UpdateCameraTransform();
     }
