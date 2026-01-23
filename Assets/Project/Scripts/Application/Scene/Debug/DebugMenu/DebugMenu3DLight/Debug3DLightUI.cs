@@ -23,6 +23,21 @@ public sealed class Debug3DLightUI : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private Button m_resetButton;
 
+    // ================================
+    // パネルの最小化
+    // ================================
+    [Header("UI - Panel")]
+    [SerializeField] private GameObject m_panelContentRoot;      // 中身全部をぶら下げるルート
+    [SerializeField] private Button m_panelToggleButton;         // 最小化トグルボタン
+    [SerializeField] private TMP_Text m_panelToggleLabel;        // ボタンの表示（▲ / ▼）
+    [SerializeField] private RectTransform m_panelRect;          // パネル本体（この Rect を動かす）
+
+    [SerializeField] private float m_expandedHeight = 220f;      // 展開時の高さ（起動時に上書き）
+    [SerializeField] private float m_collapsedHeight = 40f;      // 最小化したときの高さ
+    [SerializeField] private float m_minimizedBottomMargin = 180f;// 画面下からのオフセット(px)
+
+    private bool m_isMinimized;
+    private Vector2 m_expandedAnchoredPos;                       // 展開時の anchoredPosition を記憶
 
     private CancellationToken m_token;
 
@@ -150,6 +165,23 @@ public sealed class Debug3DLightUI : MonoBehaviour
             m_defaultCameraRotation = m_previewCamera.transform.rotation;
         }
 
+        // パネル初期状態（展開状態でスタート）
+        if (m_panelRect != null)
+        {
+            m_expandedAnchoredPos = m_panelRect.anchoredPosition;
+            // インスペクタ値より Scene 上の実際の高さを優先
+            m_expandedHeight = m_panelRect.sizeDelta.y;
+        }
+
+        if (m_panelToggleButton != null)
+        {
+            m_panelToggleButton.onClick.RemoveListener(OnClickTogglePanel);
+            m_panelToggleButton.onClick.AddListener(OnClickTogglePanel);
+        }
+
+        m_isMinimized = false;
+        ApplyPanelMinimizeState();
+
         // ラベルを初期値で更新
         UpdateValueLabel(m_directionalValueText, m_directionalSlider);
         UpdateValueLabel(m_lampValueText, m_lampSlider);
@@ -217,6 +249,60 @@ public sealed class Debug3DLightUI : MonoBehaviour
         }
     }
 
+    // ================================
+    // パネル最小化まわり
+    // ================================
+    private void OnClickTogglePanel()
+    {
+        m_isMinimized = !m_isMinimized;
+        ApplyPanelMinimizeState();
+    }
+
+    private void ApplyPanelMinimizeState()
+    {
+        if (m_panelContentRoot != null)
+        {
+            m_panelContentRoot.SetActive(!m_isMinimized);
+        }
+
+        if (m_panelToggleLabel != null)
+        {
+            m_panelToggleLabel.text = m_isMinimized ? "▲" : "▼";
+        }
+
+        if (m_panelRect == null)
+        {
+            return;
+        }
+
+        // 高さを切り替え
+        var size = m_panelRect.sizeDelta;
+        size.y = m_isMinimized ? m_collapsedHeight : m_expandedHeight;
+        m_panelRect.sizeDelta = size;
+
+        // 位置を計算（アンカーが中央の前提）
+        var parentRect = m_panelRect.parent as RectTransform;
+        if (parentRect == null)
+        {
+            return;
+        }
+
+        if (!m_isMinimized)
+        {
+            // 展開時は元の位置に戻す
+            m_panelRect.anchoredPosition = m_expandedAnchoredPos;
+        }
+        else
+        {
+            float parentH = parentRect.rect.height;
+            float selfH = m_panelRect.rect.height;
+            float margin = m_minimizedBottomMargin;
+
+            // 下から margin 分だけ上に、という y を計算（中央アンカー前提）
+            float y = -parentH * 0.5f + selfH * 0.5f + margin;
+            m_panelRect.anchoredPosition = new Vector2(m_expandedAnchoredPos.x, y);
+        }
+    }
 
     private static void UpdateValueLabel(TMP_Text label, Slider slider)
     {
