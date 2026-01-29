@@ -15,20 +15,20 @@ MonoBehaviour:
   m_GroupName: Model
   m_GUID: 9c392589f65dde844be96c2c413fbdb5
   m_SerializeEntries:
-  - m_GUID: 12f8efb2d0b682141868f4ca9e9f2f83
-    m_Address: Chara01
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - ModelView
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 60770bdb4dc667c45bea53db0339dc05
-    m_Address: Character01
+    m_Address: TestChara
     m_ReadOnly: 0
     m_SerializedLabels:
     - ModelView
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b107b2ea415fdb740b3bb67d81af652a
     m_Address: StreetLamp01
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ModelView
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e66ce0fd8c6d8c141af03679ce31bffb
+    m_Address: Chara01
     m_ReadOnly: 0
     m_SerializedLabels:
     - ModelView
